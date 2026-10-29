@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Taniti | Island Visitor Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" data-page="home">✦ Discover Taniti</a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu ☰</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <button data-page="home" class="nav-link active">Home</button>
+      <button data-page="things" class="nav-link">Things to Do</button>
+      <button data-page="stay" class="nav-link">Places to Stay</button>
+      <button data-page="food" class="nav-link">Food</button>
+      <button data-page="transport" class="nav-link">Transportation</button>
+      <button data-page="plan" class="nav-link">Visitor Information</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Your island adventure starts here</p>
+          <h1>Find your own way to discover Taniti.</h1>
+          <p>From tropical beaches and rainforest trails to local food and island tours, start planning a trip that fits
+            you.</p>
+          <button class="button primary" data-page="things">Explore activities →</button>
+        </div>
+        <div class="hero-art" role="img" aria-label="Illustrated island landscape">
+          <div class="sun"></div>
+          <div class="mountain back"></div>
+          <div class="mountain front"></div>
+          <div class="sea"></div>
+          <div class="palm">♣</div><span>ISLAND • NATURE • CULTURE</span>
+        </div>
+      </div>
+      <section class="content-section about-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Get to know the island</p>
+            <h2>About Taniti</h2>
+          </div>
+          <p>A quick introduction to help you decide what to explore during your visit.</p>
+        </div>
+        <div class="about-content">
+          <p>Taniti is an island destination with a mix of tropical beaches, rainforest, ocean activities, and local culture. Visitors can spend time around Yellow Leaf Bay, explore hiking opportunities in the island’s lush interior, or learn more about the island through tours and cultural attractions.</p>
+          <p>The island also has a small, active volcano in its mountainous interior, so visitors should check local guidance and access conditions before planning a trip there.</p>
+          <button class="button outline" data-page="plan">Read Visitor Information →</button>
+        </div>
+      </section>
+      <section class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Make it your trip</p>
+            <h2>What would you like to explore?</h2>
+          </div>
+          <p>Useful information, organized in one place.</p>
+        </div>
+        <div class="grid four">
+          <article class="card">
+            <div class="icon">⌁</div>
+            <h3>Beaches &amp; Nature</h3>
+            <p>Explore beaches, rainforest hikes, and the island’s mountainous interior.</p>
+            <button class="text-link" data-page="things">Explore nature →</button>
+          </article>
+          <article class="card">
+            <div class="icon">✧</div>
+            <h3>Tours &amp; Attractions</h3>
+            <p>Find ideas for guided tours, ocean activities, and island attractions.</p>
+            <button class="text-link" data-page="things">Browse activities →</button>
+          </article>
+          <article class="card">
+            <div class="icon">⌂</div>
+            <h3>Places to Stay</h3>
+            <p>Review accommodation types, from hostels to hotels and B&amp;Bs.</p>
+            <button class="text-link" data-page="stay">Find lodging →</button>
+          </article>
+          <article class="card">
+            <div class="icon">◎</div>
+            <h3>Visitor Information</h3>
+            <p>Check transportation, currency, holidays, and practical visitor details.</p>
+            <button class="text-link" data-page="plan">Travel information →</button>
+          </article>
+        </div>
+      </section>
+      <aside class="notice"><strong>Planning tip</strong>
+        <p>Some attractions and restaurants may close on national holidays. Confirm hours before visiting.</p>
+        <button class="text-link" data-page="plan">Visitor information →</button>
+      </aside>
+    </section>
+
+    <section id="things" class="page">
+      <div class="page-intro">
+        <p class="eyebrow">Find your next adventure</p>
+        <h1>Things to Do</h1>
+        <p>Browse Taniti’s nature, ocean, culture, and tour options. Choose an activity to learn more.</p>
+      </div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All activities</button>
+        <button class="filter" data-filter="Nature">Nature</button>
+        <button class="filter" data-filter="Adventure">Adventure</button>
+        <button class="filter" data-filter="Tours">Tours</button>
+        <button class="filter" data-filter="Ocean">Ocean</button>
+        <button class="filter" data-filter="Culture">Culture</button>
+      </div>
+      <div class="grid three activity-grid">
+        <article class="activity-card" data-category="Nature">
+          <div class="activity-art rainforest">🌿<small>OUTDOORS</small></div>
+          <div class="card-body">
+            <span class="pill">Nature</span>
+            <h2>Rainforest Hikes</h2>
+            <p>Explore lush tropical rainforest and hiking opportunities.</p>
+            <button class="button outline" data-page="rainforest">View details</button>
+          </div>
+        </article>
+        <article class="activity-card" data-category="Nature">
+          <div class="activity-art beach">〰<small>YELLOW LEAF BAY</small></div>
+          <div class="card-body">
+            <span class="pill">Nature</span>
+            <h2>Beaches &amp; Yellow Leaf Bay</h2>
+            <p>Spend time along the island’s sandy beaches and harbor.</p>
+            <button class="button outline" data-page="beach">View details</button>
+          </div>
+        </article>
+        <article class="activity-card" data-category="Adventure">
+          <div class="activity-art volcano">▲<small>ISLAND INTERIOR</small></div>
+          <div class="card-body">
+            <span class="pill">Adventure</span>
+            <h2>Volcano Visit</h2>
+            <p>Learn about the island’s small, active volcano and plan carefully.</p>
+            <button class="button outline" data-page="volcano">View details</button>
+          </div>
+        </article>
+        <article class="activity-card" data-category="Tours">
+          <div class="activity-art tour">↗<small>SEE THE ISLAND</small></div>
+          <div class="card-body">
+            <span class="pill">Tours</span>
+            <h2>Boat &amp; Bus Tours</h2>
+            <p>Consider guided options for sightseeing around the island.</p>
+            <button class="button outline" data-page="tours">View details</button>
+          </div>
+        </article>
+        <article class="activity-card" data-category="Ocean">
+          <div class="activity-art ocean">≈<small>ON THE WATER</small></div>
+          <div class="card-body">
+            <span class="pill">Ocean</span>
+            <h2>Snorkeling &amp; Fishing</h2>
+            <p>Look into ocean activities and chartered fishing trips.</p>
+            <button class="button outline" data-page="ocean">View details</button>
+          </div>
+        </article>
+        <article class="activity-card" data-category="Culture">
+          <div class="activity-art culture">▤<small>LOCAL CULTURE</small></div>
+          <div class="card-body">
+            <span class="pill">Culture</span>
+            <h2>Local History Museum</h2>
+            <p>Add a cultural stop and confirm opening hours in advance.</p>
+            <button class="button outline" data-page="museum">View details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="rainforest" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art rainforest big-art">🌿<small>TANITI RAINFOREST</small></div>
+        <div>
+          <p class="eyebrow">Nature • Outdoors</p>
+          <h1>Rainforest Hikes</h1>
+          <p class="lead">Discover the island’s lush tropical rainforest and hiking opportunities.</p>
+          <p>Before setting out, check local route conditions, expected duration, and whether a guide is recommended.
+            Arrange transport in advance if needed.</p>
+            <button class="button primary" data-page="transport">Check transportation</button> 
+            <button class="button outline" data-page="plan">Plan your visit</button>
+        </div>
+      </div>
+      <div class="info-panel">
+        <h2>Before you go</h2>
+        <ul>
+          <li>Confirm trail access and conditions locally.</li>
+          <li>Bring suitable footwear, water, and weather-appropriate gear.</li>
+          <li>Ask local providers about tours, availability, and reservations.</li>
+        </ul>
+        <p class="muted">This prototype does not provide live availability or booking services.</p>
+      </div>
+    </section>
+    <section id="beach" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art beach big-art">〰<small>YELLOW LEAF BAY</small></div>
+        <div>
+          <p class="eyebrow">Nature • Coast</p>
+          <h1>Beaches &amp; Yellow Leaf Bay</h1>
+          <p class="lead">Enjoy the sandy beaches around Yellow Leaf Bay and explore the island’s coastal scenery.</p>
+          <p>Taniti City is near white sandy beaches that encircle Yellow Leaf Bay. The island also has rocky beaches
+            and a small harbor.</p>
+            <button class="button primary" data-page="transport">Check transportation</button>
+          <button class="button outline" data-page="plan">Plan your visit</button>
+        </div>
+      </div>
+    </section>
+    <section id="volcano" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art volcano big-art">▲<small>MOUNTAINOUS INTERIOR</small></div>
+        <div>
+          <p class="eyebrow">Adventure • Nature</p>
+          <h1>Volcano Visit</h1>
+          <p class="lead">Taniti’s mountainous interior includes a small, active volcano.</p>
+          <p>Confirm current access restrictions, safety guidance, and tour availability with local authorities or
+            providers before planning a visit.</p>
+            <button class="button primary" data-page="plan">Visitor information</button>
+        </div>
+      </div>
+    </section>
+    <section id="tours" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art tour big-art">↗<small>EXPLORE TANITI</small></div>
+        <div>
+          <p class="eyebrow">Guided experiences</p>
+          <h1>Boat &amp; Bus Tours</h1>
+          <p class="lead">See more of Taniti with a guided sightseeing option.</p>
+          <p>Contact local providers for current routes, schedules, prices, and booking details. Availability may vary.</p>
+          <button class="button primary" data-page="transport">Transportation</button>
+        </div>
+      </div>
+    </section>
+    <section id="ocean" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art ocean big-art">≈<small>OCEAN ACTIVITIES</small></div>
+        <div>
+          <p class="eyebrow">Ocean • Outdoors</p>
+          <h1>Snorkeling &amp; Fishing</h1>
+          <p class="lead">Explore ocean activities, including snorkeling and chartered fishing tours.</p>
+          <p>Ask local providers about conditions, equipment, schedules, safety requirements, and reservations.</p>
+          <button class="button primary" data-page="plan">Plan your visit</button>
+        </div>
+      </div>
+    </section>
+    <section id="museum" class="page detail-page">
+      <button class="back-link" data-page="things">← Back to Things to Do</button>
+      <div class="detail-grid">
+        <div class="activity-art culture big-art">▤<small>LOCAL CULTURE</small></div>
+        <div>
+          <p class="eyebrow">Culture • History</p>
+          <h1>Local History Museum</h1>
+          <p class="lead">Make time for a cultural stop while exploring the island.</p>
+          <p>Confirm opening hours and holiday closures before visiting. Ask locally for exhibition and admission details.</p>
+          <button class="button primary" data-page="plan">Visitor information</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="stay" class="page">
+      <div class="page-intro">
+        <p class="eyebrow">Rest and recharge</p>
+        <h1>Places to Stay</h1>
+        <p>Taniti has a range of accommodation types. Contact providers directly for current rates, availability, and booking information.</p>
+      </div>
+      <div class="grid four">
+        <article class="card">
+          <div class="icon">⌂</div>
+          <h3>Hostels</h3>
+          <p>A lower-cost option for visitors who prioritize budget.</p>
+          <button class="text-link" data-page="plan">Plan your stay →</button>
+        </article>
+        <article class="card">
+          <div class="icon">▰</div>
+          <h3>Hotels</h3>
+          <p>Small hotels are available around the island.</p>
+          <button class="text-link" data-page="transport">Transport options →</button>
+        </article>
+        <article class="card">
+          <div class="icon">⌘</div>
+          <h3>Bed-and-breakfasts</h3>
+          <p>Family-owned B&amp;Bs are part of the island’s lodging mix.</p>
+          <button class="text-link" data-page="plan">Visitor information →</button>
+        </article>
+        <article class="card">
+          <div class="icon">☼</div>
+          <h3>Resort &amp; rentals</h3>
+          <p>A four-star resort and other private lodging options are available.</p>
+          <button class="text-link" data-page="transport">Transportation →</button>
+        </article>
+      </div>
+      <aside class="notice"><strong>Booking reminder</strong>
+        <p>This prototype does not connect to live booking services. Confirm lodging details directly with providers.</p>
+      </aside>
+    </section>
+
+    <section id="food" class="page">
+      <div class="page-intro">
+        <p class="eyebrow">Taste the island</p>
+        <h1>Food &amp; Dining</h1>
+        <p>Explore a mix of local and international dining options around Taniti.</p>
+      </div>
+      <div class="grid three">
+        <article class="card food-card">
+          <div class="food-art">♨</div>
+          <h3>Local cuisine</h3>
+          <p>Several restaurants serve mostly local fish and rice.</p>
+        </article>
+        <article class="card food-card">
+          <div class="food-art">✦</div>
+          <h3>American-style meals</h3>
+          <p>Visitors can find restaurants serving familiar American-style meals.</p>
+        </article>
+        <article class="card food-card">
+          <div class="food-art">❋</div>
+          <h3>Pan-Asian cuisine</h3>
+          <p>Pan-Asian dining is another option to explore.</p>
+        </article>
+      </div>
+      <aside class="notice"><strong>Check before you go</strong>
+        <p>Restaurant hours may vary, and some restaurants close on national holidays.</p>
+        <button class="text-link" data-page="plan">Visitor Information →</button>
+      </aside>
+    </section>
+
+    <section id="transport" class="page">
+      <div class="page-intro">
+        <p class="eyebrow">Move around with confidence</p>
+        <h1>Transportation Taniti</h1>
+        <p>Choose a transportation option and check the details that matter for your trip.</p>
+      </div>
+      <div class="grid three">
+        <article class="card info-card">
+          <div class="icon">◷</div>
+          <h3>Public buses</h3>
+          <p>Public buses serve Taniti City daily from <strong>5 a.m. to 11 p.m.</strong></p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">↔</div>
+          <h3>Private buses</h3>
+          <p>Private bus services serve the rest of the island.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">⌖</div>
+          <h3>Taxis</h3>
+          <p>Taxis are available in Taniti City.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">▰</div>
+          <h3>Rental cars</h3>
+          <p>A rental car agency is located near the airport.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">♧</div>
+          <h3>Bikes</h3>
+          <p>Bikes and helmets can be rented from several vendors. Helmets are required by law.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">⌁</div>
+          <h3>Walking</h3>
+          <p>Taniti City is fairly flat and walkable. Merriton Landing is also easy to explore on foot.</p>
+        </article>
+      </div>
+      <div class="cta">
+        <div>
+          <h2>Planning an activity?</h2>
+          <p>Review visitor information before setting out.</p>
+        </div>
+        <button class="button primary" data-page="plan">Visitor Information</button>
+      </div>
+    </section>
+
+    <section id="plan" class="page">
+      <div class="page-intro">
+        <p class="eyebrow">Helpful details before departure</p>
+        <h1>Visitor Information</h1>
+        <p>Keep practical visitor information handy as you plan your stay on Taniti.</p>
+      </div>
+      <div class="grid three">
+        <article class="card info-card">
+          <div class="icon">$</div>
+          <h3>Currency</h3>
+          <p>Taniti uses the U.S. dollar. Some businesses also accept euros and yen. Banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">ϟ</div>
+          <h3>Power outlets</h3>
+          <p>Power outlets are 120 volts, the same as in the United States.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">◷</div>
+          <h3>National holidays</h3>
+          <p>Some attractions and restaurants may close on national holidays, so plan ahead.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">＋</div>
+          <h3>Safety &amp; healthcare</h3>
+          <p>Be aware of your surroundings and take normal precautions against petty theft. The island has a hospital and several clinics.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">A</div>
+          <h3>Language</h3>
+          <p>Many younger residents speak fluent English. Less English is spoken in rural areas, especially by older residents.</p>
+        </article>
+        <article class="card info-card">
+          <div class="icon">✈</div>
+          <h3>Arrival</h3>
+          <p>Most visitors arrive by air. A small cruise ship also docks in Yellow Leaf Bay one night per week.</p>
+        </article>
+      </div>
+      <div class="cta">
+        <div>
+          <h2>Ready to explore?</h2>
+          <p>Browse activities and start shaping your itinerary.</p>
+        </div>
+        <button class="button primary" data-page="things">Explore activities</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-top"><a class="brand" href="#home" data-page="home">✦ Discover Taniti</a>
+      <p>Island visitor guide prototype</p>
+      <div class="footer-links">
+        <button data-page="things">Things to Do</button>
+        <button data-page="transport">Transportation</button>
+        <button data-page="plan">Visitor Information</button>
+      </div>
+    </div>
+    <p class="copyright">Prototype demonstration · Confirm current details with local providers before travel.</p>
+  </footer>
+</body>
+
+</html>
